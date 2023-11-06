@@ -434,6 +434,7 @@ def L2_error(uh, ue, V, kind='norm'):
     if kind == 'norm':
         return np.sqrt(quad(uv, float(d[0]), float(d[1]))[0])
     elif kind == 'inf':
+        
         return max(abs(uj-uej))
 
 
